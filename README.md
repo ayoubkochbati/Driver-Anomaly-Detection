@@ -1,3 +1,3 @@
 # Driver-Anomaly-Detection
-Driver Anomaly Detection
-Project MRTIC
+Project MRTIC - Driver Anomaly Detection
+
