@@ -1,0 +1,7 @@
+Errors
+
+ImportError: cannot import name 'load_img' from 'keras.preprocessing.image' colab
+
+https://stackoverflow.com/questions/72479044/cannot-import-name-load-img-from-keras-preprocessing-image
+
+-------------
