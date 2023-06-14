@@ -1,7 +1,33 @@
-Errors
+## Errors
 
 ImportError: cannot import name 'load_img' from 'keras.preprocessing.image' colab
 
 https://stackoverflow.com/questions/72479044/cannot-import-name-load-img-from-keras-preprocessing-image
 
 -------------
+/opt/conda/lib/python3.7/site-packages/ipykernel_launcher.py:7: DeprecationWarning: np.asscalar(a) is deprecated since NumPy v1.16, use a.item() instead
+  import sys
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+/tmp/ipykernel_23/1156816478.py in <module>
+      5    imgidx=ytrueidx[0]
+      6    #predictions_out.loc[i,'ytrue'] = Truidx[np.asscalar(imgidx)]
+----> 7    predictions_out.loc[i,'ytrue'] = Truidx[np.asscalar(imgidx)]
+      8    rowper=predictions_out.iloc[i,1:11]
+      9    predictions_out.loc[i,'ypred'] = 'c'+str(np.argmax(rowper))
+
+<__array_function__ internals> in asscalar(*args, **kwargs)
+
+/opt/conda/lib/python3.7/site-packages/numpy/lib/type_check.py in asscalar(a)
+    616     24
+    617     """
+--> 618     return a.item()
+    619 
+    620 #-----------------------------------------------------------------------------
+
+ValueError: can only convert an array of size 1 to a Python scalar
+
+----------------------
+
+
+
